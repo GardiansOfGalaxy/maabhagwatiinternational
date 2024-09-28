@@ -1,0 +1,136 @@
+# LANGUAGE translation of Debug Kit Application
+# Copyright 2008 Andy Dawson <andydawson76@yahoo.co.uk>
+# No version information was available in the source files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: debug_kit-\n"
+"POT-Creation-Date: 2009-05-27 09:47+0200\n"
+"PO-Revision-Date: 2009-05-27 09:47+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team:none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../../../\n"
+"Language: lim\n"
+
+#: controllers/components/toolbar.php:91
+msgid "Component initialization and startup"
+msgstr ""
+
+#: controllers/components/toolbar.php:140
+msgid "Controller Action"
+msgstr ""
+
+#: controllers/components/toolbar.php:167
+msgid "Render Controller Action"
+msgstr ""
+
+#: controllers/components/toolbar.php:231
+msgid "Could not load DebugToolbar panel %s"
+msgstr ""
+
+#: homes/elements/debug_toolbar.ctp:25
+msgid "There are no active panels. You must enable a panel to see its output."
+msgstr ""
+
+#: homes/elements/history_panel.ctp:21
+msgid "Request History"
+msgstr ""
+
+#: homes/elements/history_panel.ctp:23
+msgid "No previous requests logged."
+msgstr ""
+
+#: homes/elements/history_panel.ctp:25
+msgid "previous requests available"
+msgstr ""
+
+#: homes/elements/history_panel.ctp:27
+msgid "Restore to current request"
+msgstr ""
+
+#: homes/elements/log_panel.ctp:21
+msgid "Logs"
+msgstr ""
+
+#: homes/elements/log_panel.ctp:28
+msgid "Time"
+msgstr ""
+
+#: homes/elements/log_panel.ctp:28 homes/elements/timer_panel.ctp:54
+msgid "Message"
+msgstr ""
+
+#: homes/elements/log_panel.ctp:37
+msgid "There were no log entries made this request"
+msgstr ""
+
+#: homes/elements/request_panel.ctp:21
+msgid "Request"
+msgstr ""
+
+#: homes/elements/request_panel.ctp:35
+msgid "Current Route"
+msgstr ""
+
+#: homes/elements/session_panel.ctp:21
+msgid "Session"
+msgstr ""
+
+#: homes/elements/sql_log_panel.ctp:21
+msgid "Sql Logs"
+msgstr ""
+
+#: homes/elements/sql_log_panel.ctp:31
+msgid "toggle (%s) query explains for %s"
+msgstr ""
+
+#: homes/elements/sql_log_panel.ctp:39
+msgid "No slow queries!, or your database does not support EXPLAIN"
+msgstr ""
+
+#: homes/elements/sql_log_panel.ctp:44
+msgid "No active database connections"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:33
+msgid "Memory"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:35
+msgid "Current Memory Use"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:39
+msgid "Peak Memory Use"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:43
+msgid "Timers"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:45
+msgid "%s (ms)"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:46
+msgid "Total Request Time:"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:54
+msgid "Time in ms"
+msgstr ""
+
+#: homes/elements/timer_panel.ctp:54
+msgid "Graph"
+msgstr ""
+
+#: homes/elements/variables_panel.ctp:21
+msgid "home Variables"
+msgstr ""
+
+#: homes/helpers/simple_graph.php:79
+msgid "Starting %sms into the request, taking %sms"
+msgstr ""

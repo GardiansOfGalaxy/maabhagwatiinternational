@@ -1,0 +1,135 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# No version information was available in the source files.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: PROJECT VERSION\n"
+        "POT-Creation-Date: 2013-06-04 12:00+0200\n"
+        "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+        "Last-Translator: cake17 <gvmail76-inscription@yahoo.fr>\n"
+        "Language-Team: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "Plural-Forms: nplurals=2; plural=n>1;\n"
+
+#: controllers/components/toolbar.php:91
+msgid   "Component initialization and startup"
+msgstr  "Initialisation du component et démarrage"
+
+#: controllers/components/toolbar.php:140
+msgid   "Controller Action"
+msgstr  "Action du Controller"
+
+#: controllers/components/toolbar.php:167
+msgid   "Render Controller Action"
+msgstr  "Rendu de l'Action du Controller"
+
+#: controllers/components/toolbar.php:231
+msgid   "Could not load DebugToolbar panel %s"
+msgstr  "Ne peut charger le panel %s de DebugToolbar"
+
+#: homes/elements/debug_toolbar.ctp:25
+msgid   "There are no active panels. You must enable a panel to see its output."
+msgstr  "Il n'y a pas de panels actifs. Vous devez activer le panel pour voir sa sortie."
+
+#: homes/elements/history_panel.ctp:21
+msgid   "Request History"
+msgstr  "Historique des Requêtes"
+
+#: homes/elements/history_panel.ctp:23
+msgid   "No previous requests logged."
+msgstr  "Pas de demandes antérieures enregistrées."
+
+#: homes/elements/history_panel.ctp:25
+msgid   "previous requests available"
+msgstr  "Des requêtes antérieures sont disponibles"
+
+#: homes/elements/history_panel.ctp:27
+msgid   "Restore to current request"
+msgstr  "Restaure la requête actuelle"
+
+#: homes/elements/log_panel.ctp:21
+msgid   "Logs"
+msgstr  "Logs"
+
+#: homes/elements/log_panel.ctp:28
+msgid   "Time"
+msgstr  "Date"
+
+#: homes/elements/log_panel.ctp:28 homes/elements/timer_panel.ctp:54
+msgid   "Message"
+msgstr  "Message"
+
+#: homes/elements/log_panel.ctp:37
+msgid   "There were no log entries made this request"
+msgstr  "Il n'y avait pas d'entrées de log faîtes pour cette requête"
+
+#: homes/elements/request_panel.ctp:21
+msgid   "Request"
+msgstr  "Requête"
+
+#: homes/elements/request_panel.ctp:35
+msgid   "Current Route"
+msgstr  "Route actuelle"
+
+#: homes/elements/session_panel.ctp:21
+msgid   "Session"
+msgstr  "Session"
+
+#: homes/elements/sql_log_panel.ctp:21
+msgid   "Sql Logs"
+msgstr  "Logs Sql"
+
+#: homes/elements/sql_log_panel.ctp:31
+msgid   "toggle (%s) query explains for %s"
+msgstr  "bascule (%s) requêtes expliquées pour %s"
+
+#: homes/elements/sql_log_panel.ctp:39
+msgid   "No slow queries!, or your database does not support EXPLAIN"
+msgstr  "Pas de requêtes lentes!, ou votre base de données ne supporte pas EXPLAIN"
+
+#: homes/elements/sql_log_panel.ctp:44
+msgid   "No active database connections"
+msgstr  "Pas de connections actives de la base de données"
+
+#: homes/elements/timer_panel.ctp:33
+msgid   "Memory"
+msgstr  "Mémoire"
+
+#: homes/elements/timer_panel.ctp:35
+msgid   "Current Memory Use"
+msgstr  "Utilisation de la Mémoire Actuelle"
+
+#: homes/elements/timer_panel.ctp:39
+msgid   "Peak Memory Use"
+msgstr  "Utilisation de la Mémoire au niveau maximum"
+
+#: homes/elements/timer_panel.ctp:43
+msgid   "Timers"
+msgstr  "Timers"
+
+#: homes/elements/timer_panel.ctp:45
+msgid   "%s (ms)"
+msgstr  "%s (ms)"
+
+#: homes/elements/timer_panel.ctp:46
+msgid   "Total Request Time:"
+msgstr  "Total du Temps de Requête"
+
+#: homes/elements/timer_panel.ctp:54
+msgid   "Time in ms"
+msgstr  "Temps en ms"
+
+#: homes/elements/timer_panel.ctp:54
+msgid   "Graph"
+msgstr  "Graph"
+
+#: homes/elements/variables_panel.ctp:21
+msgid   "home Variables"
+msgstr  "Variables du home"
+
+#: homes/helpers/simple_graph.php:79
+msgid   "Starting %sms into the request, taking %sms"
+msgstr  "Début en %sms de la requête, et prend %sms"

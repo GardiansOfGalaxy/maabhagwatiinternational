@@ -1,0 +1,1730 @@
+2024-09-19 12:24:57 Debug: Received pickId: 1
+2024-09-19 12:24:57 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:24:57 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:31:49 Debug: Received pickId: 1
+2024-09-19 12:31:49 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:31:49 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:32:13 Debug: Received pickId: 1
+2024-09-19 12:32:13 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:32:13 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:35:04 Debug: Received pickId: 1
+2024-09-19 12:35:04 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:35:04 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:36:47 Debug: Received pickId: 1
+2024-09-19 12:36:47 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:36:47 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:37:29 Debug: Received pickId: 1
+2024-09-19 12:37:29 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:37:29 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:37:33 Debug: Received pickId: 3
+2024-09-19 12:37:33 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 3
+    [name] => 22
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:37:33 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:38:10 Debug: Received pickId: 4
+2024-09-19 12:38:10 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 4
+    [name] => 22
+    [denier_id] => 1
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:38:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:38:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:38:10 Debug: Deniers fetched: Array
+(
+    [1] => 100
+)
+
+2024-09-19 12:38:16 Debug: Received pickId: 3
+2024-09-19 12:38:16 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 3
+    [name] => 22
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:38:16 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:38:35 Debug: Received pickId: 3
+2024-09-19 12:38:35 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 3
+    [name] => 22
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:38:35 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:40:58 Debug: Received pickId: 1
+2024-09-19 12:40:58 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:40:58 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:41:00 Debug: Received pickId: 2
+2024-09-19 12:41:00 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 2
+    [name] => Pantery
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 17:24:05.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 17:24:36.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:41:00 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:41:03 Debug: Received pickId: 3
+2024-09-19 12:41:03 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 3
+    [name] => 22
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:41:03 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:41:05 Debug: Received pickId: 4
+2024-09-19 12:41:05 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 4
+    [name] => 22
+    [denier_id] => 1
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:38:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:38:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:41:05 Debug: Deniers fetched: Array
+(
+    [1] => 100
+)
+
+2024-09-19 12:42:16 Debug: Received pickId: 1
+2024-09-19 12:42:16 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:42:16 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:48:09 Debug: Received pickId: 3
+2024-09-19 12:48:09 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 3
+    [name] => 22
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:37:19.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:48:09 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 12:48:25 Debug: Received pickId: 4
+2024-09-19 12:48:25 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 4
+    [name] => 22
+    [denier_id] => 1
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:38:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-19 12:38:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 12:48:25 Debug: Deniers fetched: Array
+(
+    [1] => 100
+)
+
+2024-09-19 14:30:31 Debug: Received pickId: 1
+2024-09-19 14:30:31 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 14:30:31 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 14:31:13 Debug: Received pickId: 1
+2024-09-19 14:31:14 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 14:31:14 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 14:31:17 Debug: Received pickId: 2
+2024-09-19 14:31:17 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 2
+    [name] => 30
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 17:24:05.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-08-15 14:50:49.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 14:31:17 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 14:33:57 Debug: Received pickId: 1
+2024-09-19 14:33:57 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 14:33:57 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 14:40:30 Debug: Received pickId: 1
+2024-09-19 14:40:30 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 14:40:30 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 14:40:41 Debug: Received pickId: 2
+2024-09-19 14:40:41 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 2
+    [name] => 30
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 17:24:05.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-08-15 14:50:49.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-19 14:40:41 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-19 15:11:13 Notice: Notice (1024): Undefined property: PrintedStockEntriesController::$Waterjets in C:\xampp\8.2\htdocs\Clothing\src\Controller\PrintedStockEntriesController.php on line 55 in [C:\xampp\8.2\htdocs\Clothing\vendor\cakephp\cakephp\src\Controller\Controller.php, line 313]
+Request URL: /printedStockEntries/add
+Referer URL: http://localhost:8765/users/login?redirect=%2FprintedStockEntries%2Fadd
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Controller\Controller::__get() - CORE\src\Controller\Controller.php, line 313
+App\Controller\PrintedStockEntriesController::add() - APP/Controller\PrintedStockEntriesController.php, line 55
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 531
+Cake\Controller\ControllerFactory::invoke() - CORE\src\Controller\ControllerFactory.php, line 149
+Cake\Http\BaseApplication::handle() - CORE\src\Http\BaseApplication.php, line 313
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() - ROOT\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() - CORE\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 161
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 126
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 58
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 90
+[main] - ROOT\webroot\index.php, line 40
+
+2024-09-20 06:08:41 Notice: Notice (1024): Undefined property: FoldingsController::$Waterjets in C:\xampp\8.2\htdocs\Clothing\src\Controller\FoldingsController.php on line 56 in [C:\xampp\8.2\htdocs\Clothing\vendor\cakephp\cakephp\src\Controller\Controller.php, line 313]
+Request URL: /foldings/add
+Referer URL: http://localhost:8765/printedStockEntries/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Controller\Controller::__get() - CORE\src\Controller\Controller.php, line 313
+App\Controller\FoldingsController::add() - APP/Controller\FoldingsController.php, line 56
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 531
+Cake\Controller\ControllerFactory::invoke() - CORE\src\Controller\ControllerFactory.php, line 149
+Cake\Http\BaseApplication::handle() - CORE\src\Http\BaseApplication.php, line 313
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() - ROOT\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() - CORE\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 161
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 126
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() - CORE\src\Http\Runner.php, line 73
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 58
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 90
+[main] - ROOT\webroot\index.php, line 40
+
+2024-09-20 07:50:31 Debug: Received pickId: 1
+2024-09-20 07:50:31 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-20 07:50:31 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-20 09:17:20 Debug: Received pickId: 1
+2024-09-20 09:17:20 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-20 09:17:20 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-21 07:05:43 Debug: Received pickId: 1
+2024-09-21 07:05:43 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 1
+    [name] => 25
+    [denier_id] => 2
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 04:38:41.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-07-28 13:49:44.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-21 07:05:43 Debug: Deniers fetched: Array
+(
+    [2] => 120
+)
+
+2024-09-21 07:06:09 Debug: Received pickId: 3
+2024-09-21 07:06:09 Debug: Pick data: App\Model\Entity\Pick Object
+(
+    [id] => 3
+    [name] => 25
+    [denier_id] => 1
+    [created] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-21 07:06:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [modified] => Cake\I18n\FrozenTime Object
+        (
+            [date] => 2024-09-21 07:06:00.000000
+            [timezone_type] => 3
+            [timezone] => UTC
+        )
+
+    [[new]] => 
+    [[accessible]] => Array
+        (
+            [name] => 1
+            [denier_id] => 1
+            [created] => 1
+            [modified] => 1
+            [denier] => 1
+            [dispatch_to_own_factories] => 1
+            [printed_stock_entries] => 1
+            [waterjets] => 1
+        )
+
+    [[dirty]] => Array
+        (
+        )
+
+    [[original]] => Array
+        (
+        )
+
+    [[virtual]] => Array
+        (
+        )
+
+    [[hasErrors]] => 
+    [[errors]] => Array
+        (
+        )
+
+    [[invalid]] => Array
+        (
+        )
+
+    [[repository]] => Picks
+)
+
+2024-09-21 07:06:09 Debug: Deniers fetched: Array
+(
+    [1] => 100
+)
+

@@ -1,0 +1,40 @@
+2024-09-20 05:39:12 Warning: Warning (2): Undefined array key "REQUEST_METHOD" in [C:\xampp\8.2\htdocs\Clothing\config\bootstrap.php, line 219]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+require_once - ROOT\config\bootstrap.php, line 219
+Cake\Http\BaseApplication::bootstrap() - CORE\src\Http\BaseApplication.php, line 172
+App\Application::bootstrap() - APP/Application.php, line 59
+Cake\Console\CommandRunner::bootstrap() - CORE\src\Console\CommandRunner.php, line 195
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 133
+[main] - ROOT\bin\cake.php, line 12
+
+2024-09-20 05:39:12 Warning: Warning (2): Undefined array key "REQUEST_METHOD" in [C:\xampp\8.2\htdocs\Clothing\config\bootstrap.php, line 232]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+require_once - ROOT\config\bootstrap.php, line 232
+Cake\Http\BaseApplication::bootstrap() - CORE\src\Http\BaseApplication.php, line 172
+App\Application::bootstrap() - APP/Application.php, line 59
+Cake\Console\CommandRunner::bootstrap() - CORE\src\Console\CommandRunner.php, line 195
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 133
+[main] - ROOT\bin\cake.php, line 12
+
+2024-09-21 05:58:37 Warning: Warning (2): Undefined array key "REQUEST_METHOD" in [C:\xampp\8.2\htdocs\Clothing\config\bootstrap.php, line 219]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+require_once - ROOT\config\bootstrap.php, line 219
+Cake\Http\BaseApplication::bootstrap() - CORE\src\Http\BaseApplication.php, line 172
+App\Application::bootstrap() - APP/Application.php, line 59
+Cake\Console\CommandRunner::bootstrap() - CORE\src\Console\CommandRunner.php, line 195
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 133
+[main] - ROOT\bin\cake.php, line 12
+
+2024-09-21 05:58:37 Warning: Warning (2): Undefined array key "REQUEST_METHOD" in [C:\xampp\8.2\htdocs\Clothing\config\bootstrap.php, line 232]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+require_once - ROOT\config\bootstrap.php, line 232
+Cake\Http\BaseApplication::bootstrap() - CORE\src\Http\BaseApplication.php, line 172
+App\Application::bootstrap() - APP/Application.php, line 59
+Cake\Console\CommandRunner::bootstrap() - CORE\src\Console\CommandRunner.php, line 195
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 133
+[main] - ROOT\bin\cake.php, line 12
+
