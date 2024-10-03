@@ -109,4 +109,18 @@ class WidthsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function deleteMultiple()
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $ids = $this->request->getData('ids');
+        if (!empty($ids)) {
+            $this->Widths->deleteAll(['id IN' => $ids]);
+            $this->Flash->success(__('The selected widths have been deleted.'));
+        } else {
+            $this->Flash->error(__('No widths selected.'));
+        }
+
+        return $this->redirect(['action' => 'index']);
+    }
+
 }

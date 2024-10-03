@@ -104,4 +104,23 @@ class LengthsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function bulkDelete()
+{
+    $this->request->allowMethod(['post']);
+
+    // Get selected IDs
+    $selectedIds = $this->request->getData('selected_ids');
+
+    if (!empty($selectedIds)) {
+        // Delete selected records
+        $this->Lengths->deleteAll(['id IN' => $selectedIds]);
+
+        $this->Flash->success(__('The selected records have been deleted.'));
+    } else {
+        $this->Flash->error(__('No records selected.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+}
+
 }

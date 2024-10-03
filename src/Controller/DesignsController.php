@@ -104,4 +104,27 @@ class DesignsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function deleteMultiple()
+{
+    $this->request->allowMethod(['post', 'delete']);
+
+    // Get the selected design IDs from the form
+    $selectedDesigns = $this->request->getData('selected_designs');
+
+    if (!empty($selectedDesigns)) {
+        // Attempt to delete the selected designs
+        foreach ($selectedDesigns as $id) {
+            $design = $this->Designs->get($id);
+            if (!$this->Designs->delete($design)) {
+                $this->Flash->error(__('The design with ID {0} could not be deleted.', $id));
+            }
+        }
+        $this->Flash->success(__('The selected designs have been deleted.'));
+    } else {
+        $this->Flash->error(__('Please select at least one design to delete.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+}
+
 }

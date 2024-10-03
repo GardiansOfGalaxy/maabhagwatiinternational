@@ -151,10 +151,24 @@ class PrintedStockEntriesController extends AppController
         $totalQuantity = 0;
 
         if ($pickId) {
-            // Assuming the Waterjets table is loaded and has a 'pick_id' field
-            $totalQuantity = $this->loadModel('Waterjets')->find()
+            // Load Waterjets table and get total quantity
+            $totalQuantitywaterjet = $this->loadModel('Waterjets')->find()
+            ->where(['pick_id' => $pickId])
+            ->sumOf('quantity');
+
+            // Fetch the corresponding denier for the pick
+            // $denier = $this->loadModel('Waterjets')->find()
+            //     ->select(['denier'])
+            //     ->where(['pick_id' => $pickId])
+            //     ->first();
+
+            // Load PrintedStockEntries table and get total quantity for matching pick and denier
+            $printedStockTotal = $this->loadModel('PrintedStockEntries')->find()
                 ->where(['pick_id' => $pickId])
-                ->sumOf('quantity'); // Adjust 'quantity' if the column name is different
+                ->sumOf('quantity'); // Adjust 'quantity' if needed
+
+            // // Subtract PrintedStockEntry total from Waterjet total
+            $totalQuantity = $totalQuantitywaterjet - $printedStockTotal;
         }
 
         return $this->response->withStringBody(json_encode(['totalQuantity' => $totalQuantity]));
@@ -179,4 +193,26 @@ class PrintedStockEntriesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function bulkDelete()
+    {
+        if ($this->request->is(['post'])) {
+            // Retrieve selected IDs from the form
+            $selectedIds = $this->request->getData('selected_ids');
+
+            if (!empty($selectedIds)) {
+                // Attempt to delete the selected entries
+                $this->PrintedStockEntries->deleteAll(['id IN' => $selectedIds]);
+
+                // Set a success flash message
+                $this->Flash->success(__('Selected entries have been deleted.'));
+            } else {
+                // Set an error flash message if no entries were selected
+                $this->Flash->error(__('Please select at least one entry to delete.'));
+            }
+        }
+
+        // Redirect back to the index (or wherever you want to redirect)
+        return $this->redirect(['action' => 'index']);
+    }
+
 }

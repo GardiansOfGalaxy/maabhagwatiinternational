@@ -104,4 +104,19 @@ class DeniersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function deleteMultiple() {
+        if ($this->request->is('post')) {
+            $selectedIds = $this->request->getData('selected_ids');
+            if (!empty($selectedIds)) {
+                // Delete selected records
+                $this->Deniers->deleteAll(['id IN' => $selectedIds]);
+                $this->Flash->success(__('Selected records have been deleted.'));
+            } else {
+                $this->Flash->error(__('No records selected for deletion.'));
+            }
+        }
+        return $this->redirect(['action' => 'index']);
+    }
+
+
 }

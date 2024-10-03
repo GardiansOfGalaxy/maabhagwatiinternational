@@ -153,4 +153,26 @@ class DispatchToOwnFactoriesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function deleteMultiple()
+{
+    $this->request->allowMethod(['post', 'delete']);
+
+    $selectedIds = $this->request->getData('selected_ids');
+
+    if (!empty($selectedIds)) {
+        $this->loadModel('DispatchToOwnFactories');
+        $entities = $this->DispatchToOwnFactories->find()->where(['id IN' => $selectedIds])->all();
+
+        if ($this->DispatchToOwnFactories->deleteMany($entities)) {
+            $this->Flash->success(__('The selected records have been deleted.'));
+        } else {
+            $this->Flash->error(__('The selected records could not be deleted. Please try again.'));
+        }
+    } else {
+        $this->Flash->error(__('No records were selected.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+}
+
 }

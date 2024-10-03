@@ -5,8 +5,9 @@ use Cake\I18n\Time;
 <section class="content-header">
     <h1>
     Meter Per Roll
-
-        <div class="pull-right"><?php echo $this->Html->link(__('New'), ['action' => 'add'], ['class' => 'btn btn-success btn-xs']) ?></div>
+        <div class="pull-right">
+            <?php echo $this->Html->link(__('New'), ['action' => 'add'], ['class' => 'btn btn-success btn-xs']) ?>
+        </div>
     </h1>
 </section>
 
@@ -31,10 +32,18 @@ use Cake\I18n\Time;
                     </div>
                 </div>
                 <!-- /.box-header -->
+
+                <!-- Form for multiple delete -->
+                <?= $this->Form->create(null, ['url' => ['action' => 'deleteSelected'], 'id' => 'deleteForm']) ?>
                 <div class="box-body table-responsive no-padding">
+                     <!-- Delete Selected Button -->
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-danger" onclick="return confirmDelete()"><?= __('Delete Selected') ?></button>
+                </div>
                     <table class="table table-hover">
                         <thead>
                             <tr>
+                                <th><input type="checkbox" id="select-all"></th> <!-- Select All checkbox -->
                                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('number') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -45,6 +54,7 @@ use Cake\I18n\Time;
                         <tbody>
                             <?php foreach ($mtrperrolls as $mtrperroll) : ?>
                                 <tr>
+                                    <td><input type="checkbox" name="ids[]" value="<?= $mtrperroll->id ?>"></td> <!-- Checkbox for each row -->
                                     <td><?= $this->Number->format($mtrperroll->id) ?></td>
                                     <td><?= $this->Number->format($mtrperroll->number) ?></td>
                                     <td><?= h(Time::parse($mtrperroll->created)->timezone('Asia/Kolkata')->i18nFormat('dd-MMM-yyyy hh:mm a')) ?></td>
@@ -60,6 +70,10 @@ use Cake\I18n\Time;
                     </table>
                 </div>
                 <!-- /.box-body -->
+
+
+                <?= $this->Form->end() ?>
+
                 <div class="paginator">
                     <ul class="pagination">
                         <?= $this->Paginator->first('<< ' . __('first')) ?>
@@ -70,9 +84,25 @@ use Cake\I18n\Time;
                     </ul>
                     <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
                 </div>
-      </div>
+            </div>
             </div>
             <!-- /.box -->
         </div>
     </div>
 </section>
+
+<!-- JavaScript for Select All and Confirm Delete -->
+<script type="text/javascript">
+    // Select/Deselect all checkboxes
+    document.getElementById('select-all').onclick = function() {
+        var checkboxes = document.getElementsByName('ids[]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
+    }
+
+    // Confirm before deleting
+    function confirmDelete() {
+        return confirm("Are you sure you want to delete the selected records?");
+    }
+</script>

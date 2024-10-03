@@ -120,4 +120,25 @@ class MtrperrollsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function deleteMultiple()
+{
+    if ($this->request->is('post')) {
+        $selectedIds = $this->request->getData('selected_ids');
+        if (!empty($selectedIds)) {
+            // Find the selected records
+            $records = $this->Mtrperrolls->find()->where(['id IN' => $selectedIds]);
+
+            // Delete the selected records
+            if ($this->Mtrperrolls->deleteMany($records)) {
+                $this->Flash->success(__('The selected records have been deleted.'));
+            } else {
+                $this->Flash->error(__('There was an error deleting the records. Please, try again.'));
+            }
+        } else {
+            $this->Flash->error(__('No records selected.'));
+        }
+    }
+    return $this->redirect(['action' => 'index']);
+}
+
 }

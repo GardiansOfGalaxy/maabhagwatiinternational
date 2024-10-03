@@ -124,4 +124,26 @@ class DispatchStockSalesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function bulkDelete()
+{
+    $this->request->allowMethod(['post', 'delete']);
+    $ids = $this->request->getData('ids');
+
+    if (!empty($ids)) {
+        $entities = $this->DispatchStockSales->find('all', [
+            'conditions' => ['DispatchStockSales.id IN' => $ids]
+        ])->toArray();
+
+        if ($this->DispatchStockSales->deleteMany($entities)) {
+            $this->Flash->success(__('The selected records have been deleted.'));
+        } else {
+            $this->Flash->error(__('Some records could not be deleted. Please try again.'));
+        }
+    } else {
+        $this->Flash->error(__('No records selected.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+}
+
 }

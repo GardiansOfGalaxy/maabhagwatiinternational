@@ -109,4 +109,25 @@ class PicksController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    // PicksController.php
+
+public function bulkDelete()
+{
+    $this->request->allowMethod(['post', 'delete']);
+
+    // Get the selected IDs from the form
+    $selectedIds = $this->request->getData('selected_ids');
+
+    if (!empty($selectedIds)) {
+        // Attempt to delete all selected picks
+        $this->Picks->deleteAll(['id IN' => $selectedIds]);
+
+        $this->Flash->success(__('The selected picks have been deleted.'));
+    } else {
+        $this->Flash->error(__('No picks were selected for deletion.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+}
+
 }

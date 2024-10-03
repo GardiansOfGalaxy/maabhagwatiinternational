@@ -169,4 +169,25 @@ class WaterjetsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function bulkDelete()
+{
+    if ($this->request->is('post')) {
+        $selectedIds = $this->request->getData('selected_ids');
+
+        if (!empty($selectedIds)) {
+            // Delete the selected Waterjets records
+            $this->Waterjets->deleteAll(['id IN' => $selectedIds]);
+
+            // Set a success message
+            $this->Flash->success(__('The selected waterjets have been deleted.'));
+        } else {
+            // Set an error message if no items were selected
+            $this->Flash->error(__('Please select at least one item to delete.'));
+        }
+    }
+
+    // Redirect back to the index
+    return $this->redirect(['action' => 'index']);
+}
+
 }

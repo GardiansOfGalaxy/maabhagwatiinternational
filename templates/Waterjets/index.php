@@ -31,9 +31,13 @@ use Cake\I18n\Time;
         </div>
         <!-- /.box-header -->
         <div class="box-body table-responsive no-padding">
+          <button type="button" class="btn btn-danger" id="deleteSelectedBtn"><?= __('Delete Selected') ?></button>
+
+          <?= $this->Form->create(null, ['url' => ['action' => 'bulkDelete'], 'id' => 'bulkDeleteForm']) ?>
           <table class="table table-hover">
             <thead>
               <tr>
+                  <th scope="col"><input type="checkbox" id="selectAll" /></th> <!-- Select All checkbox -->
                   <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('date') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('pick_id') ?></th>
@@ -47,6 +51,7 @@ use Cake\I18n\Time;
             <tbody>
               <?php foreach ($waterjets as $waterjet): ?>
                 <tr>
+                  <td><input type="checkbox" name="selected_ids[]" value="<?= $waterjet->id ?>" class="selectCheckbox"></td> <!-- Checkbox for each row -->
                   <td><?= $this->Number->format($waterjet->id) ?></td>
                   <td><?= h($waterjet->date->format('d-m-Y')) ?></td>
                   <td><?= h($waterjet->pick->name) ?></td>
@@ -63,21 +68,42 @@ use Cake\I18n\Time;
               <?php endforeach; ?>
             </tbody>
           </table>
+
+          <?= $this->Form->end() ?>
         </div>
         <!-- /.box-body -->
         <div class="paginator">
-                    <ul class="pagination">
-                        <?= $this->Paginator->first('<< ' . __('first')) ?>
-                        <?= $this->Paginator->prev('< ' . __('previous')) ?>
-                        <?= $this->Paginator->numbers() ?>
-                        <?= $this->Paginator->next(__('next') . ' >') ?>
-                        <?= $this->Paginator->last(__('last') . ' >>') ?>
-                    </ul>
-                    <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
+          <ul class="pagination">
+            <?= $this->Paginator->first('<< ' . __('first')) ?>
+            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->last(__('last') . ' >>') ?>
+          </ul>
+          <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
         </div>
       </div>
-      </div>
-      <!-- /.box -->
     </div>
+    <!-- /.box -->
   </div>
+</div>
 </section>
+
+<!-- Add this script block for the confirmation and checkbox selection -->
+<script>
+document.getElementById('selectAll').addEventListener('click', function(event) {
+    let checkboxes = document.querySelectorAll('.selectCheckbox');
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = event.target.checked;
+    });
+});
+
+document.getElementById('deleteSelectedBtn').addEventListener('click', function() {
+    let selected = document.querySelectorAll('.selectCheckbox:checked');
+    if (selected.length === 0) {
+        alert('Please select at least one item to delete.');
+    } else if (confirm('Are you sure you want to delete the selected items?')) {
+        document.getElementById('bulkDeleteForm').submit();
+    }
+});
+</script>

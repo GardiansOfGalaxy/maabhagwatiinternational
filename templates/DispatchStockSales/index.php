@@ -32,9 +32,14 @@ use Cake\I18n\Time;
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
+                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete the selected items?')"><?= __('Delete Selected') ?></button>
+
+                    <!-- Form for multiple delete -->
+                    <?= $this->Form->create(null, ['url' => ['action' => 'bulkDelete'], 'id' => 'bulkDeleteForm']) ?>
                     <table class="table table-hover">
                         <thead>
                             <tr>
+                                <th><input type="checkbox" id="select-all"></th>
                                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('date') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('L') ?></th>
@@ -48,6 +53,7 @@ use Cake\I18n\Time;
                         <tbody>
                             <?php foreach ($dispatchStockSales as $dispatchStockSale) : ?>
                                 <tr>
+                                    <td><input type="checkbox" name="ids[]" value="<?= $dispatchStockSale->id ?>"></td>
                                     <td><?= $this->Number->format($dispatchStockSale->id) ?></td>
                                     <td><?= h($dispatchStockSale->date->format('d-m-Y')) ?></td>
                                     <td><?= h($dispatchStockSale->length->L) ?></td>
@@ -64,6 +70,7 @@ use Cake\I18n\Time;
                             <?php endforeach; ?>
                         </tbody>
                     </table>
+                    <?= $this->Form->end() ?>
                 </div>
                 <!-- /.box-body -->
                 <div class="paginator">
@@ -82,3 +89,13 @@ use Cake\I18n\Time;
         </div>
     </div>
 </section>
+
+<script>
+    // Select/Deselect all checkboxes
+    document.getElementById('select-all').onclick = function() {
+        var checkboxes = document.querySelectorAll('input[name="ids[]"]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
+    }
+</script>

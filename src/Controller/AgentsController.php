@@ -104,4 +104,27 @@ class AgentsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function deleteMultiple()
+{
+    $this->request->allowMethod(['post']);
+
+    $selectedAgents = $this->request->getData('selected_agents');
+
+    if (!empty($selectedAgents)) {
+        $agents = $this->Agents->find()
+            ->where(['id IN' => $selectedAgents])
+            ->all();
+
+        if ($this->Agents->deleteMany($agents)) {
+            $this->Flash->success(__('The selected agents have been deleted.'));
+        } else {
+            $this->Flash->error(__('The selected agents could not be deleted. Please, try again.'));
+        }
+    } else {
+        $this->Flash->error(__('No agents were selected for deletion.'));
+    }
+
+    return $this->redirect(['action' => 'index']);
+}
+
 }

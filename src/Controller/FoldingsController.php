@@ -125,4 +125,21 @@ class FoldingsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function deleteMultiple()
+{
+    if ($this->request->is('post')) {
+        $ids = $this->request->getData('ids');
+        if (!empty($ids)) {
+            foreach ($ids as $id) {
+                $folding = $this->Foldings->get($id);
+                $this->Foldings->delete($folding);
+            }
+            $this->Flash->success(__('The selected records have been deleted.'));
+        } else {
+            $this->Flash->error(__('Please select at least one record to delete.'));
+        }
+    }
+    return $this->redirect(['action' => 'index']);
+}
+
 }

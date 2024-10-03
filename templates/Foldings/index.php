@@ -30,11 +30,17 @@ use Cake\I18n\Time;
                         </form>
                     </div>
                 </div>
-                <!-- /.box-header -->
+
+                <!-- Add form for multiple delete -->
+                <?= $this->Form->create(null, ['url' => ['action' => 'deleteMultiple'], 'onsubmit' => 'return confirmDelete();']) ?>
                 <div class="box-body table-responsive no-padding">
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-danger btn-xs"><?= __('Delete Selected') ?></button>
+                </div>
                     <table class="table table-hover">
                         <thead>
                             <tr>
+                                <th><input type="checkbox" id="select-all"></th> <!-- Checkbox for select all -->
                                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('date') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('L') ?></th>
@@ -49,6 +55,7 @@ use Cake\I18n\Time;
                         <tbody>
                             <?php foreach ($foldings as $folding) : ?>
                                 <tr>
+                                    <td><input type="checkbox" name="ids[]" value="<?= $folding->id ?>"></td> <!-- Checkbox for each row -->
                                     <td><?= $this->Number->format($folding->id) ?></td>
                                     <td><?= h($folding->date->format('d-m-Y')) ?></td>
                                     <td><?= h($folding->length->L) ?></td>
@@ -68,6 +75,12 @@ use Cake\I18n\Time;
                     </table>
                 </div>
                 <!-- /.box-body -->
+
+                <!-- Delete button -->
+
+                <?= $this->Form->end() ?>
+
+                <!-- Paginator -->
                 <div class="paginator">
                     <ul class="pagination">
                         <?= $this->Paginator->first('<< ' . __('first')) ?>
@@ -78,9 +91,22 @@ use Cake\I18n\Time;
                     </ul>
                     <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
                 </div>
-      </div>
             </div>
-            <!-- /.box -->
         </div>
     </div>
 </section>
+
+<!-- JavaScript for confirming deletion and handling select all -->
+<script>
+    function confirmDelete() {
+        return confirm("Are you sure you want to delete the selected records?");
+    }
+
+    // Select/Deselect all checkboxes
+    document.getElementById('select-all').addEventListener('change', function() {
+        var checkboxes = document.querySelectorAll('input[name="ids[]"]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
+    });
+</script>

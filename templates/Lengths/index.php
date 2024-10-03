@@ -6,8 +6,9 @@ use Cake\I18n\Time;
 <section class="content-header">
     <h1>
         L
-
-        <div class="pull-right"><?php echo $this->Html->link(__('New'), ['action' => 'add'], ['class' => 'btn btn-success btn-xs']) ?></div>
+        <div class="pull-right">
+            <?php echo $this->Html->link(__('New'), ['action' => 'add'], ['class' => 'btn btn-success btn-xs']) ?>
+        </div>
     </h1>
 </section>
 
@@ -33,9 +34,13 @@ use Cake\I18n\Time;
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
+                    <!-- Delete Selected Button -->
+                    <button type="submit" class="btn btn-danger btn-xs" id="bulkDeleteButton">Delete Selected</button>
+                    <?= $this->Form->create(null, ['url' => ['action' => 'bulkDelete'], 'id' => 'bulkDeleteForm']) ?>
                     <table class="table table-hover">
                         <thead>
                             <tr>
+                                <th><input type="checkbox" id="selectAll"></th> <!-- Select All checkbox -->
                                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('L') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -46,6 +51,7 @@ use Cake\I18n\Time;
                         <tbody>
                             <?php foreach ($lengths as $length) : ?>
                                 <tr>
+                                    <td><input type="checkbox" name="selected_ids[]" value="<?= $length->id ?>"></td> <!-- Row checkboxes -->
                                     <td><?= $this->Number->format($length->id) ?></td>
                                     <td><?= h($length->L) ?></td>
                                     <td><?= h(Time::parse($length->created)->timezone('Asia/Kolkata')->i18nFormat('dd-MMM-yyyy hh:mm a')) ?></td>
@@ -59,6 +65,9 @@ use Cake\I18n\Time;
                             <?php endforeach; ?>
                         </tbody>
                     </table>
+
+
+                    <?= $this->Form->end() ?>
                 </div>
                 <!-- /.box-body -->
                 <div class="paginator">
@@ -71,9 +80,26 @@ use Cake\I18n\Time;
                     </ul>
                     <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
                 </div>
-      </div>
             </div>
-            <!-- /.box -->
         </div>
     </div>
 </section>
+
+<!-- JavaScript to handle select all and confirm deletion -->
+<script>
+    // Select all checkboxes
+    document.getElementById('selectAll').addEventListener('click', function (event) {
+        var checkboxes = document.querySelectorAll('input[name="selected_ids[]"]');
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked = event.target.checked;
+        });
+    });
+
+    // Confirm bulk delete
+    document.getElementById('bulkDeleteButton').addEventListener('click', function (event) {
+        var confirmDelete = confirm('Are you sure you want to delete the selected items?');
+        if (!confirmDelete) {
+            event.preventDefault(); // Prevent form submission if user cancels
+        }
+    });
+</script>

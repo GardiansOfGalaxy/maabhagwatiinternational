@@ -28,22 +28,28 @@
           </div>
         </div>
         <!-- /.box-header -->
+
+        <!-- Add form for deleting multiple records -->
+        <?= $this->Form->create(null, ['url' => ['action' => 'deleteMultiple'], 'onsubmit' => 'return confirm("Are you sure you want to delete the selected records?")']); ?>
+
         <div class="box-body table-responsive no-padding">
           <table class="table table-hover">
             <thead>
               <tr>
-                  <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                  <th scope="col"><?= $this->Paginator->sort('date') ?></th>
-                  <th scope="col"><?= $this->Paginator->sort('picks') ?></th>
-                  <th scope="col"><?= $this->Paginator->sort('data') ?></th>
-                  <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                  <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                  <th scope="col" class="actions text-center"><?= __('Actions') ?></th>
+                <th><input type="checkbox" id="select-all"></th> <!-- Checkbox to select all -->
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('date') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('picks') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('data') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                <th scope="col" class="actions text-center"><?= __('Actions') ?></th>
               </tr>
             </thead>
             <tbody>
               <?php foreach ($greyRemainings as $greyRemaining): ?>
                 <tr>
+                  <td><?= $this->Form->checkbox('selected_ids[]', ['value' => $greyRemaining->id]) ?></td> <!-- Checkbox for each row -->
                   <td><?= $this->Number->format($greyRemaining->id) ?></td>
                   <td><?= h($greyRemaining->date) ?></td>
                   <td><?= h($greyRemaining->picks) ?></td>
@@ -61,19 +67,45 @@
           </table>
         </div>
         <!-- /.box-body -->
+
+        <!-- Button for deleting selected records -->
+        <div class="box-footer">
+          <?= $this->Form->button(__('Delete Selected'), ['type' => 'submit', 'class' => 'btn btn-danger btn-xs']) ?>
+        </div>
+
+        <?= $this->Form->end(); ?>
+
         <div class="paginator">
-                    <ul class="pagination">
-                        <?= $this->Paginator->first('<< ' . __('first')) ?>
-                        <?= $this->Paginator->prev('< ' . __('previous')) ?>
-                        <?= $this->Paginator->numbers() ?>
-                        <?= $this->Paginator->next(__('next') . ' >') ?>
-                        <?= $this->Paginator->last(__('last') . ' >>') ?>
-                    </ul>
-                    <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
-                </div>
+          <ul class="pagination">
+              <?= $this->Paginator->first('<< ' . __('first')) ?>
+              <?= $this->Paginator->prev('< ' . __('previous')) ?>
+              <?= $this->Paginator->numbers() ?>
+              <?= $this->Paginator->next(__('next') . ' >') ?>
+              <?= $this->Paginator->last(__('last') . ' >>') ?>
+          </ul>
+          <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
+        </div>
       </div>
-      </div>
-      <!-- /.box -->
     </div>
+    <!-- /.box -->
   </div>
+</div>
 </section>
+
+<script>
+    // Select all checkboxes
+    document.getElementById('select-all').addEventListener('click', function(event) {
+  const checkboxes = document.querySelectorAll('input[name="selected_ids[]"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = event.target.checked;
+  });
+});
+
+    // Confirm bulk delete
+    document.getElementById('bulkDeleteButton').addEventListener('click', function (event) {
+        var confirmDelete = confirm('Are you sure you want to delete the selected items?');
+        if (!confirmDelete) {
+            event.preventDefault(); // Prevent form submission if user cancels
+        }
+    });
+</script>
